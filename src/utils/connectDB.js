@@ -12,7 +12,6 @@ const connectDB = () => {
   });
   mongoose.connection.on('disconnected', () => {
     console.log('DB Disconnected 💔');
-    connectDB();
   });
 };
 
